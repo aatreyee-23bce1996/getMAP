@@ -1,7 +1,7 @@
 # getMAP 🛰️
 
 > **AI-powered spatial downscaling of tropospheric NO₂ satellite maps**  
-> Software Engineering Lab · BCSE301P · SIH Problem Statement
+> Software Engineering Lab · BCSE301P · SIH '24 Problem Statement SIH1734 
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3670A0?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.42+-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io)
@@ -66,7 +66,7 @@ getMAP/
 ├── index.html       ← Standalone presentation/demo landing page
 ├── styles.css       ← Streamlit custom CSS (auto-loaded)
 ├── pyproject.toml   ← Dependency manifest
-└── .env             ← Your local config (not committed to git)
+└── .env             ← Environment variables (not committed to git)
 ```
 
 **Pipeline flow:**
@@ -127,7 +127,7 @@ git clone https://github.com/your-username/getmap.git
 cd getmap
 
 # Or just unzip and navigate to the folder
-cd C:\Users\nanda\Downloads\swelab
+cd \path
 ```
 
 ### Step 2 — (Optional but recommended) Create a virtual environment
@@ -160,7 +160,7 @@ Create a file named **`.env`** in the root project folder (same folder as `main.
 DATABASE_URL=sqlite:///./getmap.db
 ```
 
-That's the only line you need. SQLite creates the database file automatically on first run.
+SQLite creates the database file automatically on first run.
 
 ---
 
@@ -180,8 +180,6 @@ Streamlit will print something like:
 ```
 
 Open **http://localhost:8501** in your browser. The app is ready.
-
-> **Presentation page:** Open `index.html` directly in any browser (double-click the file) for a standalone landing page that describes the project — useful for demos and lab presentations without needing the Streamlit server running.
 
 ---
 
